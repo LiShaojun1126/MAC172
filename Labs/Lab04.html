@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Box Styling Example</title>
+  </head>
+
+  <style>
+    body {
+      font-family: Arial;
+      background-color: lightgray;
+      padding: 20px;
+    }
+    div.box {
+      width: 300px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 25px;
+      padding-right: 25px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      background-color: white;
+    }
+    div.box1 {
+      border: solid 3px lightblue;
+      border-radius: 10px;
+      margin: 20px 50px 10px 30px;
+      padding: 20px;
+    }
+
+    div.box2 {
+      border: dashed 4px orange;
+      border-radius: 25px;
+      margin: 40px 0px 20px 0px;
+      padding: 10px 40px 10px 40px;
+    }
+
+    div.box3 {
+      border: double 5px lightgreen;
+      border-radius: 0px;
+      margin: 10px;
+      padding: 30px 20px 10px 20px;
+    }
+  </style>
+  <body>
+    <div class="box box1">
+      <h3>Box 1: Solid Border</h3>
+      <p>This box has a solid border with a border-radius of 10px.</p>
+    </div>
+    <div class="box box2">
+      <h3>Box 2: Dashed Border</h3>
+      <p>This box has a dashed border and a border-radius of 25px.</p>
+    </div>
+    <div class="box box3">
+      <h3>Box 3: Double Border</h3>
+      <p>
+        This box uses a double border with no border-radius and individual
+        padding values.
+      </p>
+    </div>
+  </body>
+</html>
