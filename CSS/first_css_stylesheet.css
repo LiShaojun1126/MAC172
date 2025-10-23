@@ -1,36 +1,36 @@
 p {
-  font-size: 42px;
-  font-family: "Times New Roman", Times, serif;
-  color: red;
+    font-size: 42px;
+    font-family: "Times New Roman", Times, serif;
+    color: red;
 }
 
 h1 {
-  color: green;
+    color: green;
 }
 
 #para1 {
-  /* id selector*/
-  color: aqua;
+    /* id selector*/
+    color: aqua;
 }
 
 body {
-  background-color: black;
+    background-color: black;
 }
 
 .colorgreen {
-  /* class name selector*/
-  color: greenyellow;
+    /* class name selector*/
+    color: greenyellow;
 }
 
 a:link {
-  /* pseudo classes, used to define a special state of an element*/
-  color: red;
+    /* pseudo classes, used to define a special state of an element*/
+    color: red;
 }
 
 a:visited {
-  color: yellow;
+    color: yellow;
 }
 
 a:hover {
-  color: blue;
+    color: blue;
 }
