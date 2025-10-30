@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script src="/js/first.js"></script>
+        <br />
+        <script>
+            const answer = window.confirm("do you want to go to next page?");
+            alert(answer);
+            document.write("<br>");
+        </script>
+
+        <script>
+            const tempInF = Number(prompt("Temperature value in Fahrenheit:"));
+            const tempInC = (5 / 9) * (tempInF - 32);
+
+            document.write(
+                `temperature in Fahrenheit=${tempInF} and the value in Celsius = ${tempInC}`
+            );
+        </script>
+    </body>
+</html>
