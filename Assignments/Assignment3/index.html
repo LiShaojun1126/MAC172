@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Password verification system</title>
+    </head>
+    <body>
+        <form action="">
+            <div>
+                <label>Enter your password:</label>
+                <input
+                    type="password"
+                    width="50px"
+                    maxlength="20"
+                    id="initial"
+                />
+                <br />
+            </div>
+            <div>
+                <label for="second">Re-enter your password:</label>
+                <input
+                    type="password"
+                    width="50px"
+                    maxlength="20"
+                    id="second"
+                />
+                <br />
+            </div>
+            <button type="submit" onclick="chkPasswords()">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+
+        <script>
+            const chkPasswords = () => {
+                const initialPasswords =
+                    document.getElementById("initial").value;
+                const secondPasswords = document.getElementById("second").value;
+                if (initialPasswords === "") {
+                    alert(
+                        "You did not enter a password. Please enter one now!"
+                    );
+                } else if (initialPasswords !== secondPasswords) {
+                    alert(
+                        "The two passwords you entered are not the same. Please re-enter both now."
+                    );
+                } else if (initialPasswords === secondPasswords) {
+                    alert("The two passwords you entered are the same.");
+                }
+            };
+        </script>
+    </body>
+</html>
