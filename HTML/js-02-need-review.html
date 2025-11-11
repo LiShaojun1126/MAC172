@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <button onclick="showMessage()">Click me</button>
+        <input type="button" onclick="showMessage()" />
+        <script>
+            // const day = "Monday";
+            // switch (day) {
+            //     case "Monday":
+            //         console.log("today is monday");
+            //         break;
+            //     case "Friday":
+            //         console.log("Enjoy your weekend");
+            // }
+
+            const sum = function (a = 0, b = 1) {
+                //default value: use = to assign default value
+                console.log(Number(a) + Number(b));
+            };
+            sum(); //default value , 1
+            sum(5); //6
+            sum(5, 4); //9
+
+            const showMessage = () => {
+                alert("Hello World");
+            };
+            // const fruits = ["apple", "banana"];
+            // fruits.push("mango");
+            // const removed = fruits.pop();
+            // console.log(removed, fruits.push("kiwi"), fruits);
+            const fruits = ["apple", "banana"];
+            fruits.unshift("watermelon", "kiwi");
+            console.log(fruits);
+            const newFruits = ["pear", "lemon"];
+            //combine
+            console.log(newFruits.concat(fruits));
+
+            const combined = newFruits.concat(fruits);
+
+            //join
+            console.log(combined.join(" ")); //'pear lemon watermelon kiwi apple banana'
+
+            //slice
+            const slicedFruits = combined.slice(1, 4); // starts at 1st argument index, ends before the 2nd argument
+            console.log(slicedFruits);
+
+            //includes
+            console.log(combined.includes("pear")); //true
+            console.log(combined.includes("dragonfruit")); //false
+
+            //indexOf
+            console.log(combined.indexOf("kiwi")); //3
+            console.log(combined.indexOf("grape")); //dne, -1
+        </script>
+    </body>
+</html>
