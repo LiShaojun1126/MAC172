@@ -56,6 +56,42 @@
             //indexOf
             console.log(combined.indexOf("kiwi")); //3
             console.log(combined.indexOf("grape")); //dne, -1
+
+            //object
+            const shaojun = {
+                friends: ["Sunny", "Windy", "Cloudy"],
+                birthYear: 2002,
+                firstName: "Shaojun",
+
+                bornIn: function () {
+                    //you cannot use arrow function here
+                    return `${this.firstName} is born in ${this.birthYear}`;
+                },
+            };
+
+            console.log(shaojun.birthYear);
+            console.log(shaojun["birthYear"]);
+            shaojun.lastName = "Li"; //add a new property
+
+            console.log(shaojun.lastName);
+            console.log(shaojun.bornIn());
+
+            for (let key in shaojun) {
+                console.log(`${key} is ${shaojun[key]}`); //we cannot use dot here
+            }
+
+            //object reference:
+            let user1 = {
+                name: "abc",
+            };
+            let user2 = user1;
+            console.log(user2.name);
+            user2.name = "def";
+            console.log(user1.name); //change of user2 will affect the value of user1
+
+            const a = {};
+            const b = {};
+            console.log(a === b); //false, because they are not refering to the same memory location
         </script>
     </body>
 </html>
